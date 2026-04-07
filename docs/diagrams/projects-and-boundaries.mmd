@@ -1,0 +1,21 @@
+flowchart LR
+  proto["ashton-proto<br/>shared contracts"]
+  athena["ATHENA<br/>physical truth"]
+  apollo["APOLLO<br/>member truth"]
+  hermes["HERMES<br/>staff reads"]
+  gateway["Gateway<br/>routed control layer"]
+  platform["ashton-platform<br/>planning and release discipline"]
+
+  platform --> proto
+  platform --> athena
+  platform --> apollo
+  platform --> hermes
+  platform --> gateway
+
+  proto --> athena
+  proto --> apollo
+  proto --> gateway
+
+  athena --> apollo
+  athena --> hermes
+  athena --> gateway
