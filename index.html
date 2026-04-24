@@ -6,102 +6,330 @@
     <title>Lintel Labs</title>
     <meta
       name="description"
-      content="Lintel Labs builds practical software systems, AI demos, and deployable infrastructure."
+      content="Lintel Labs is the public home for Izzet Abidi's self-hosted AI applications, deployed coursework, and platform work."
     />
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
-    <div class="page-shell">
-      <header class="hero">
+    <div class="background-layer background-a" aria-hidden="true"></div>
+    <div class="background-layer background-b" aria-hidden="true"></div>
+    <div class="background-grid" aria-hidden="true"></div>
+
+    <header class="site-header">
+      <a class="brand" href="#top">
+        <span class="brand-mark">L</span>
+        <span class="brand-text">Lintel Labs</span>
+      </a>
+
+      <nav class="site-nav" aria-label="Primary">
+        <a href="#about">About</a>
+        <a href="#work">Work</a>
+        <a href="#platform">Platform</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <a class="header-link" href="https://github.com/ixxet">GitHub</a>
+    </header>
+
+    <main id="top" class="page-shell">
+      <section class="hero panel snap-section">
         <div class="hero-copy">
-          <p class="eyebrow">Lintel Labs</p>
-          <h1>Deployable software, narrow systems, real demos.</h1>
-          <p class="lede">
-            This domain is the public front door for current work, course demos,
-            and production-shaped experiments running on owned infrastructure.
+          <p class="eyebrow">Self-hosted systems, public demos, private model stack</p>
+          <h1>
+            Lintel Labs is where I ship applied AI work without pretending the
+            infrastructure does not matter.
+          </h1>
+          <p class="hero-intro">
+            I'm Izzet Abidi. I build deployment-grade coursework, self-hosted AI
+            applications, and the longer-running platform work that sits under
+            the ASHTON codename. This site is the public surface of that work.
           </p>
+
           <div class="hero-actions">
-            <a class="button button-primary" href="#projects">View projects</a>
-            <a class="button button-secondary" href="#about">About</a>
+            <a class="button button-primary" href="#work">See live work</a>
+            <a class="button button-secondary" href="#about">Read the approach</a>
+          </div>
+
+          <div class="hero-signals">
+            <div class="signal-card">
+              <span class="signal-label">Current focus</span>
+              <strong>Coursework that deploys like product work</strong>
+            </div>
+            <div class="signal-card">
+              <span class="signal-label">Runtime split</span>
+              <strong>Static site on Cloudflare, apps on owned compute</strong>
+            </div>
+            <div class="signal-card">
+              <span class="signal-label">Model policy</span>
+              <strong>Public UI, private vLLM and internal services</strong>
+            </div>
           </div>
         </div>
-        <aside class="status-panel">
-          <p class="status-label">Current public shape</p>
-          <ul class="status-list">
-            <li><span>Main site</span><strong>lintellabs.net</strong></li>
-            <li><span>Summarizer</span><strong>summarizer.lintellabs.net</strong></li>
-            <li><span>RAG lab</span><strong>rag.lintellabs.net</strong></li>
-            <li><span>Fraud demo</span><strong>fraud.lintellabs.net</strong></li>
-          </ul>
-        </aside>
-      </header>
 
-      <main>
-        <section id="projects" class="section">
-          <div class="section-heading">
-            <p class="eyebrow">Projects</p>
-            <h2>Public apps and live coursework</h2>
-          </div>
-
-          <div class="card-grid">
-            <article class="card">
-              <p class="card-kicker">Live app</p>
-              <h3>Summarizer</h3>
-              <p>
-                Article summarization demo backed by the private model stack on
-                Prometheus.
-              </p>
-              <a href="https://summarizer.lintellabs.net">Open app</a>
-            </article>
-
-            <article class="card">
-              <p class="card-kicker">Course deploy</p>
-              <h3>Literary RAG Lab</h3>
-              <p>
-                Dostoevsky and Nietzsche retrieval-augmented generation lab with
-                a public UI and private model backend.
-              </p>
-              <a href="https://rag.lintellabs.net">Open app</a>
-            </article>
-
-            <article class="card">
-              <p class="card-kicker">In migration</p>
-              <h3>Fraud Sentinel</h3>
-              <p>
-                Fraud detection dashboard with API, analyst workflow, and
-                grounded review support.
-              </p>
-              <a href="https://fraud.lintellabs.net">Planned hostname</a>
-            </article>
-          </div>
-        </section>
-
-        <section id="about" class="section split-section">
-          <div>
-            <p class="eyebrow">About</p>
-            <h2>What this domain is for</h2>
-            <p>
-              The main site stays static and simple. Interactive apps run on the
-              self-hosted cluster behind Cloudflare Tunnel so the public URL is
-              stable while the compute stays under my control.
-            </p>
-            <p>
-              The private model endpoints, cluster surfaces, and operator tools
-              are not exposed directly.
-            </p>
-          </div>
-
-          <div class="note-card">
-            <h3>Near-term plan</h3>
-            <ul>
-              <li>Keep the landing page on Cloudflare Pages.</li>
-              <li>Publish app subdomains through one named tunnel.</li>
-              <li>Keep raw vLLM private behind app-specific services.</li>
-              <li>Move admin tools behind Access or Tailscale only.</li>
+        <aside class="hero-rail">
+          <div class="rail-card">
+            <p class="rail-title">Live surfaces</p>
+            <ul class="rail-list">
+              <li>
+                <span>Main site</span>
+                <a href="https://lintellabs.net">lintellabs.net</a>
+              </li>
+              <li>
+                <span>Summarizer</span>
+                <a href="https://summarizer.lintellabs.net">summarizer.lintellabs.net</a>
+              </li>
+              <li>
+                <span>Literary RAG</span>
+                <a href="https://rag.lintellabs.net">rag.lintellabs.net</a>
+              </li>
+              <li>
+                <span>Fraud Sentinel</span>
+                <a href="https://fraud.lintellabs.net">fraud.lintellabs.net</a>
+              </li>
             </ul>
           </div>
-        </section>
-      </main>
-    </div>
+
+          <div class="rail-card">
+            <p class="rail-title">Why this split works</p>
+            <p>
+              The site stays static and cheap. The apps sit behind Cloudflare
+              Tunnel and run on the Prometheus cluster, where they can reach
+              private vLLM, Postgres, Qdrant, TEI, and observability surfaces
+              without exposing those services directly.
+            </p>
+          </div>
+        </aside>
+      </section>
+
+      <section id="about" class="panel snap-section section-block">
+        <div class="section-heading">
+          <p class="eyebrow">About</p>
+          <h2>A little more serious than a portfolio, less vague than a personal brand page.</h2>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-copy">
+            <p>
+              I care about systems that can survive contact with real runtime
+              constraints: GPU limits, network boundaries, deployment friction,
+              audit trails, and the difference between a local demo and a
+              public-facing surface.
+            </p>
+            <p>
+              The through-line across this work is the same whether the project
+              starts as coursework or platform R&amp;D: build a narrow slice,
+              make it observable, deploy it honestly, and keep the interfaces
+              readable as the system grows.
+            </p>
+          </div>
+
+          <div class="about-panels">
+            <article class="mini-panel">
+              <span class="panel-kicker">How I build</span>
+              <h3>Proof over posture</h3>
+              <p>
+                I prefer bounded capability, clean interfaces, and deployable
+                truth over broad claims or hand-wavy platform language.
+              </p>
+            </article>
+
+            <article class="mini-panel">
+              <span class="panel-kicker">Current stack</span>
+              <h3>Owned infra first</h3>
+              <p>
+                Talos, Flux, Cloudflare, vLLM, LangGraph, Postgres, and
+                Qdrant are already in the loop. The landing page is static; the
+                applications are not.
+              </p>
+            </article>
+
+            <article class="mini-panel">
+              <span class="panel-kicker">Public identity</span>
+              <h3>Lintel outside, ASHTON inside</h3>
+              <p>
+                Lintel is the public-facing name. ASHTON is the internal
+                codename for the platform architecture that ties the longer-term
+                work together.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="work" class="panel snap-section section-block">
+        <div class="section-heading">
+          <p class="eyebrow">Selected Work</p>
+          <h2>Live projects with real deployment shape behind them.</h2>
+        </div>
+
+        <div class="project-stack">
+          <article class="project-card">
+            <div class="project-meta">
+              <span class="project-status">Live now</span>
+              <span class="project-host">summarizer.lintellabs.net</span>
+            </div>
+            <div class="project-body">
+              <h3>Summarizer</h3>
+              <p>
+                An extractive summarization project that combines TextRank and
+                MMR to reduce redundancy while keeping the important sentences in
+                view. The public app is narrow by design; the model and runtime
+                services remain private.
+              </p>
+              <ul class="project-points">
+                <li>TextRank + MMR summarization pipeline for news-style input.</li>
+                <li>Prometheus-monitored deployment rather than a classroom-only demo.</li>
+                <li>Public surface is intentionally thinner than the internal platform.</li>
+              </ul>
+              <div class="project-links">
+                <a href="https://summarizer.lintellabs.net">Open app</a>
+                <a href="https://github.com/ixxet/User-Adaptive-Summarization_COMP385-402_Group-4_Winter2026">Repository</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-meta">
+              <span class="project-status">Live now</span>
+              <span class="project-host">rag.lintellabs.net</span>
+            </div>
+            <div class="project-body">
+              <h3>Literary RAG Lab</h3>
+              <p>
+                A retrieval-augmented generation system over Dostoevsky and
+                Nietzsche that uses FAISS retrieval, Sentence-Transformers
+                embeddings, and a private vLLM backend. The point is not just
+                retrieval quality, but a public grading surface that actually works.
+              </p>
+              <ul class="project-points">
+                <li>Corpus fetch, cleanup, chunking, embedding, and exact-vector retrieval.</li>
+                <li>Grounded answers with citations and visible retrieved passages.</li>
+                <li>Hosted so the app can reach vLLM even when the reviewer cannot.</li>
+              </ul>
+              <div class="project-links">
+                <a href="https://rag.lintellabs.net">Open app</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-meta">
+              <span class="project-status">Live now</span>
+              <span class="project-host">fraud.lintellabs.net</span>
+            </div>
+            <div class="project-body">
+              <h3>Fraud Sentinel</h3>
+              <p>
+                A fraud-detection system with a PyTorch model, FastAPI
+                inference layer, SvelteKit dashboard, LangGraph review flow, and
+                RAG-grounded analyst brief. The LLM explains; it does not make
+                the fraud decision.
+              </p>
+              <ul class="project-points">
+                <li>Classifier plus anomaly signal for transaction scoring.</li>
+                <li>Analyst queue, case workflow, and grounded review context.</li>
+                <li>Deployed as a proper app slice rather than a one-off UI mock.</li>
+              </ul>
+              <div class="project-links">
+                <a href="https://fraud.lintellabs.net">Open app</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="platform" class="panel snap-section section-block">
+        <div class="section-heading">
+          <p class="eyebrow">Platform Direction</p>
+          <h2>ASHTON is the longer arc: modular services, narrow reads, honest boundaries.</h2>
+        </div>
+
+        <div class="platform-layout">
+          <div class="platform-copy">
+            <p>
+              The live course projects sit on top of a larger systems direction.
+              Under the ASHTON codename, the work is split into bounded services
+              instead of one shapeless app: physical truth, member truth,
+              operator reads, shared contracts, and a GitOps deployment
+              substrate.
+            </p>
+            <p>
+              I am not trying to fake a finished platform. The goal is to prove
+              one real capability at a time and keep the system understandable
+              as it expands.
+            </p>
+          </div>
+
+          <div class="platform-grid">
+            <article class="mini-panel">
+              <span class="panel-kicker">Physical truth</span>
+              <h3>ATHENA</h3>
+              <p>Presence, occupancy, edge ingress, and bounded live deployment proof.</p>
+            </article>
+
+            <article class="mini-panel">
+              <span class="panel-kicker">Member truth</span>
+              <h3>APOLLO</h3>
+              <p>Auth, profile state, explicit lobby membership, workouts, and deterministic previews.</p>
+            </article>
+
+            <article class="mini-panel">
+              <span class="panel-kicker">Staff reads</span>
+              <h3>HERMES</h3>
+              <p>Read-only operational surfaces over stable upstream truth.</p>
+            </article>
+
+            <article class="mini-panel">
+              <span class="panel-kicker">Deployment substrate</span>
+              <h3>Prometheus</h3>
+              <p>Talos, Flux, observability, private model services, and the runtime behind these demos.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="panel snap-section section-block section-principles">
+        <div class="section-heading">
+          <p class="eyebrow">Working Style</p>
+          <h2>The bar is simple: working code, clean boundaries, credible deployment.</h2>
+        </div>
+
+        <div class="principles-grid">
+          <article class="principle-card">
+            <h3>Narrow slices</h3>
+            <p>One deployed capability is more valuable than a wide roadmap with no proof behind it.</p>
+          </article>
+          <article class="principle-card">
+            <h3>Observable first</h3>
+            <p>Metrics, traces, and explicit health surfaces matter before the system is considered real.</p>
+          </article>
+          <article class="principle-card">
+            <h3>Infrastructure honesty</h3>
+            <p>Public URLs are allowed to be simple. The runtime behind them should still be disciplined.</p>
+          </article>
+          <article class="principle-card">
+            <h3>Readable growth</h3>
+            <p>Projects should become more coherent as they expand, not more mysterious.</p>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer id="contact" class="site-footer">
+      <div>
+        <p class="footer-title">Lintel Labs</p>
+        <p class="footer-copy">
+          Public entry point for live apps, course deployments, and the longer
+          platform work under ASHTON.
+        </p>
+      </div>
+
+      <div class="footer-links">
+        <a href="https://lintellabs.net">Home</a>
+        <a href="https://github.com/ixxet">GitHub</a>
+        <a href="https://fraud.lintellabs.net">Fraud Sentinel</a>
+        <a href="https://rag.lintellabs.net">Literary RAG</a>
+      </div>
+    </footer>
   </body>
 </html>
