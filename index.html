@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lintel Labs</title>
+    <meta
+      name="description"
+      content="Lintel Labs builds practical software systems, AI demos, and deployable infrastructure."
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">Lintel Labs</p>
+          <h1>Deployable software, narrow systems, real demos.</h1>
+          <p class="lede">
+            This domain is the public front door for current work, course demos,
+            and production-shaped experiments running on owned infrastructure.
+          </p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#projects">View projects</a>
+            <a class="button button-secondary" href="#about">About</a>
+          </div>
+        </div>
+        <aside class="status-panel">
+          <p class="status-label">Current public shape</p>
+          <ul class="status-list">
+            <li><span>Main site</span><strong>lintellabs.net</strong></li>
+            <li><span>Summarizer</span><strong>summarizer.lintellabs.net</strong></li>
+            <li><span>RAG lab</span><strong>rag.lintellabs.net</strong></li>
+            <li><span>Fraud demo</span><strong>fraud.lintellabs.net</strong></li>
+          </ul>
+        </aside>
+      </header>
+
+      <main>
+        <section id="projects" class="section">
+          <div class="section-heading">
+            <p class="eyebrow">Projects</p>
+            <h2>Public apps and live coursework</h2>
+          </div>
+
+          <div class="card-grid">
+            <article class="card">
+              <p class="card-kicker">Live app</p>
+              <h3>Summarizer</h3>
+              <p>
+                Article summarization demo backed by the private model stack on
+                Prometheus.
+              </p>
+              <a href="https://summarizer.lintellabs.net">Open app</a>
+            </article>
+
+            <article class="card">
+              <p class="card-kicker">Course deploy</p>
+              <h3>Literary RAG Lab</h3>
+              <p>
+                Dostoevsky and Nietzsche retrieval-augmented generation lab with
+                a public UI and private model backend.
+              </p>
+              <a href="https://rag.lintellabs.net">Open app</a>
+            </article>
+
+            <article class="card">
+              <p class="card-kicker">In migration</p>
+              <h3>Fraud Sentinel</h3>
+              <p>
+                Fraud detection dashboard with API, analyst workflow, and
+                grounded review support.
+              </p>
+              <a href="https://fraud.lintellabs.net">Planned hostname</a>
+            </article>
+          </div>
+        </section>
+
+        <section id="about" class="section split-section">
+          <div>
+            <p class="eyebrow">About</p>
+            <h2>What this domain is for</h2>
+            <p>
+              The main site stays static and simple. Interactive apps run on the
+              self-hosted cluster behind Cloudflare Tunnel so the public URL is
+              stable while the compute stays under my control.
+            </p>
+            <p>
+              The private model endpoints, cluster surfaces, and operator tools
+              are not exposed directly.
+            </p>
+          </div>
+
+          <div class="note-card">
+            <h3>Near-term plan</h3>
+            <ul>
+              <li>Keep the landing page on Cloudflare Pages.</li>
+              <li>Publish app subdomains through one named tunnel.</li>
+              <li>Keep raw vLLM private behind app-specific services.</li>
+              <li>Move admin tools behind Access or Tailscale only.</li>
+            </ul>
+          </div>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>
