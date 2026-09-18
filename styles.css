@@ -92,6 +92,20 @@ h3 { font-size: 32px; line-height: 1.15; }
 .flow-step-final div > span { color: #c0d0b8; }
 .flow-step-final .step-icon { color: #d9e79d; }
 
+.cent-feature { row-gap: 26px; }
+.cent-actions { display: flex; flex-wrap: wrap; gap: 12px 24px; align-items: center; margin: 24px 0 16px; }
+.featured-copy > .cent-boundary { font-size: 12px; }
+.cent-walkthrough ol { padding-left: 24px; margin: 18px 0 12px; }
+.cent-walkthrough li { padding: 0 0 14px 6px; font-size: 14px; }
+.cent-walkthrough li::marker { color: #576d4a; }
+.cent-walkthrough strong, .cent-walkthrough li span { display: block; }
+.cent-walkthrough li span { color: #53604d; font-size: 13px; }
+.cent-walkthrough > .text-link { display: flex; justify-content: space-between; border-top: 1px solid #cbd3c1; }
+.cent-notes { grid-column: 1 / -1; border-top: 1px solid #cbd3c1; padding-top: 16px; font-size: 13px; color: #53604d; }
+.cent-notes summary { cursor: pointer; color: var(--green); padding-block: 4px; }
+.cent-notes p { margin-top: 12px; max-width: 880px; }
+.cent-notes a { text-decoration: underline; text-underline-offset: 3px; }
+
 .project-row { display: grid; grid-template-columns: 64px 1fr auto; align-items: center; gap: 28px; padding-block: 32px; border-bottom: 1px solid var(--line); transition: background .2s; }
 .project-row:hover { background: #eeefe6; }
 .project-symbol { display: grid; place-items: center; width: 64px; height: 64px; border-radius: 10px; color: #837244; background: #eeebdf; transition: transform .3s var(--ease); }
