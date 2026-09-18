@@ -3,333 +3,142 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Lintel Labs</title>
-    <meta
-      name="description"
-      content="Lintel Labs is the public home for Izzet Abidi's self-hosted AI applications, deployed coursework, and platform work."
-    />
+    <meta name="theme-color" content="#f5f4ef" />
+    <title>Lintel Labs | Applied AI by Izzet Abidi</title>
+    <meta name="description" content="Applied AI and thoughtful software by Izzet Abidi. Explore Fraud Sentinel, User-Adaptive Summarization, and Literary RAG Lab." />
+    <link rel="canonical" href="https://lintellabs.net/" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;450;500;600&amp;family=Instrument+Serif:ital@0;1&amp;display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="./styles.css" />
   </head>
-  <body>
-    <div class="background-layer background-a" aria-hidden="true"></div>
-    <div class="background-layer background-b" aria-hidden="true"></div>
-    <div class="background-grid" aria-hidden="true"></div>
+  <body id="top">
+    <a class="skip-link" href="#main">Skip to content</a>
 
-    <header class="site-header">
-      <a class="brand" href="#top">
-        <span class="brand-mark">L</span>
-        <span class="brand-text">Lintel Labs</span>
+    <header class="site-header shell">
+      <a class="brand" href="#top" aria-label="Lintel Labs home">
+        <svg class="brand-mark" viewBox="0 0 28 28" fill="none" aria-hidden="true">
+          <path d="M3 5h22v5H3zM5 12h5v12H5zM18 12h5v12h-5z" fill="currentColor" />
+        </svg>
+        <span>lintel<span class="brand-light">labs</span><span class="brand-period">.</span></span>
       </a>
-
-      <nav class="site-nav" aria-label="Primary">
-        <a href="#about">About</a>
+      <nav aria-label="Primary navigation">
         <a href="#work">Work</a>
-        <a href="#platform">Platform</a>
-        <a href="#contact">Contact</a>
+        <a href="#about">About</a>
+        <a class="nav-external" href="https://github.com/ixxet">GitHub <span aria-hidden="true">&#8599;</span></a>
       </nav>
-
-      <a class="header-link" href="https://github.com/ixxet">GitHub</a>
     </header>
 
-    <main id="top" class="page-shell">
-      <section class="hero panel snap-section">
+    <main id="main" class="shell">
+      <section class="hero" aria-labelledby="hero-title">
         <div class="hero-copy">
-          <p class="eyebrow">Self-hosted systems, public demos, private model stack</p>
-          <h1>
-            Lintel Labs is where I ship applied AI work without pretending the
-            infrastructure does not matter.
-          </h1>
-          <p class="hero-intro">
-            I'm Izzet Abidi. I build deployment-grade coursework, self-hosted AI
-            applications, and the longer-running platform work that sits under
-            the ASHTON codename. This site is the public surface of that work.
-          </p>
-
-          <div class="hero-actions">
-            <a class="button button-primary" href="#work">See live work</a>
-            <a class="button button-secondary" href="#about">Read the approach</a>
-          </div>
-
-          <div class="hero-signals">
-            <div class="signal-card">
-              <span class="signal-label">Current focus</span>
-              <strong>Coursework that deploys like product work</strong>
-            </div>
-            <div class="signal-card">
-              <span class="signal-label">Runtime split</span>
-              <strong>Static site on Cloudflare, apps on owned compute</strong>
-            </div>
-            <div class="signal-card">
-              <span class="signal-label">Model policy</span>
-              <strong>Public UI, private vLLM and internal services</strong>
-            </div>
-          </div>
+          <p class="eyebrow"><span class="small-line" aria-hidden="true"></span> An independent software practice</p>
+          <h1 id="hero-title">Applied AI.<br /><em>Made useful.</em></h1>
+          <p class="hero-intro">I'm Izzet Abidi. I turn ideas in machine learning into software you can use, explore, and understand.</p>
+          <a class="button" href="#work">Explore the work <span aria-hidden="true">&#8595;</span></a>
         </div>
 
-        <aside class="hero-rail">
-          <div class="rail-card">
-            <p class="rail-title">Live surfaces</p>
-            <ul class="rail-list">
-              <li>
-                <span>Main site</span>
-                <a href="https://lintellabs.net">lintellabs.net</a>
-              </li>
-              <li>
-                <span>Summarizer</span>
-                <a href="https://summarizer.lintellabs.net">summarizer.lintellabs.net</a>
-              </li>
-              <li>
-                <span>Literary RAG</span>
-                <a href="https://rag.lintellabs.net">rag.lintellabs.net</a>
-              </li>
-              <li>
-                <span>Fraud Sentinel</span>
-                <a href="https://fraud.lintellabs.net">fraud.lintellabs.net</a>
-              </li>
+        <figure class="hero-art">
+          <svg viewBox="0 0 420 370" fill="none" role="img" aria-labelledby="lintel-title">
+            <title id="lintel-title">A geometric lintel resting on two pillars</title>
+            <defs>
+              <linearGradient id="pillar" x1="90" y1="165" x2="260" y2="310" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#e4e7db" />
+                <stop offset="1" stop-color="#bcc8b8" />
+              </linearGradient>
+              <radialGradient id="ground">
+                <stop stop-color="#274a3a" stop-opacity=".16" />
+                <stop offset="1" stop-color="#274a3a" stop-opacity="0" />
+              </radialGradient>
+            </defs>
+            <circle cx="210" cy="185" r="149" stroke="#d8ddd0" />
+            <circle cx="210" cy="185" r="120" stroke="#e0e3d8" stroke-dasharray="2 8" />
+            <path d="M26 185h368M210 17v336" stroke="#d8ddd0" stroke-dasharray="4 6" />
+            <ellipse cx="221" cy="313" rx="164" ry="36" fill="url(#ground)" />
+            <path d="m89 166 24-16h52l-24 16H89Z" fill="#edf0e5" />
+            <path d="M89 166h52v143H89z" fill="url(#pillar)" />
+            <path d="m141 166 24-16v143l-24 16V166Z" fill="#a2b29f" />
+            <path d="m228 166 24-16h52l-24 16h-52Z" fill="#edf0e5" />
+            <path d="M228 166h52v143h-52z" fill="url(#pillar)" />
+            <path d="m280 166 24-16v143l-24 16V166Z" fill="#a2b29f" />
+            <path d="m64 120 50-32h240l-50 32H64Z" fill="#54816b" />
+            <path d="M64 120h240v46H64z" fill="#2c5846" />
+            <path d="m304 120 50-32v46l-50 32v-46Z" fill="#1c3e31" />
+            <path d="M89 166h52v8H89zM228 166h52v8h-52z" fill="#263f30" fill-opacity=".12" />
+            <path d="M40 330h340" stroke="#bbc5b6" />
+            <path d="M40 325v10m340-10v10" stroke="#bbc5b6" />
+            <circle cx="359" cy="220" r="5" fill="#bcce73" />
+          </svg>
+          <figcaption><span>Lintel / noun</span>A beam that spans an opening.</figcaption>
+        </figure>
+      </section>
+
+      <section id="work" class="work-section" aria-labelledby="work-title">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">01 / Selected work</p>
+            <h2 id="work-title">From idea to interaction.</h2>
+          </div>
+          <span class="section-note">A few things I've built</span>
+        </div>
+
+        <article class="featured-project" aria-labelledby="fraud-title">
+          <div class="featured-copy">
+            <p class="eyebrow"><span class="status-dot" aria-hidden="true"></span> Featured / Interactive demo</p>
+            <h3 id="fraud-title">Fraud Sentinel</h3>
+            <p>Spot unusual transactions and follow the evidence. A fraud detection workspace that brings model predictions, AI explanations, and human review together.</p>
+            <ul class="tags" aria-label="Fraud Sentinel technologies">
+              <li>PyTorch</li><li>FastAPI</li><li>SvelteKit</li>
             </ul>
+            <a class="text-link" href="https://fraud.lintellabs.net">Try Fraud Sentinel <span aria-hidden="true">&#8599;</span></a>
           </div>
+          <div class="review-flow" role="img" aria-label="Fraud Sentinel workflow: a model scores transactions, AI adds context, and an analyst makes the final review decision.">
+            <div class="flow-heading" aria-hidden="true"><span>The review loop</span><span>01 &#8211; 03</span></div>
+            <div class="flow-step" aria-hidden="true"><span class="step-number">01</span><div><strong>Detect the signal</strong><span>Model scoring</span></div><span class="step-icon">&#8599;</span></div>
+            <div class="flow-connector" aria-hidden="true"></div>
+            <div class="flow-step" aria-hidden="true"><span class="step-number">02</span><div><strong>Add the context</strong><span>Grounded explanation</span></div><span class="step-icon">&#8599;</span></div>
+            <div class="flow-connector" aria-hidden="true"></div>
+            <div class="flow-step flow-step-final" aria-hidden="true"><span class="step-number">03</span><div><strong>Keep a human in the loop</strong><span>Analyst review</span></div><span class="step-icon">&#10003;</span></div>
+          </div>
+        </article>
 
-          <div class="rail-card">
-            <p class="rail-title">Why this split works</p>
-            <p>
-              The site stays static and cheap. The apps sit behind Cloudflare
-              Tunnel and run on the Prometheus cluster, where they can reach
-              private vLLM, Postgres, Qdrant, TEI, and observability surfaces
-              without exposing those services directly.
-            </p>
-          </div>
-        </aside>
+        <a class="project-row" href="https://github.com/ixxet/User-Adaptive-Summarization_COMP385-402_Group-4_Winter2026/tree/rouge-one">
+          <span class="project-symbol" aria-hidden="true"><svg viewBox="0 0 32 32" fill="none"><path d="M7 8h18M7 14h18M7 20h12M7 26h8" stroke="currentColor" stroke-width="2" /></svg></span>
+          <div class="project-description"><p class="eyebrow">Language / Capstone collaboration</p><h3>User-Adaptive Summarization</h3><p>Turn long articles into focused summaries, with control over tone, length, and how the summary is generated.</p></div>
+          <span class="row-action">Explore project <span aria-hidden="true">&#8599;</span></span>
+        </a>
+
+        <a class="project-row" href="https://github.com/ixxet/COMP263-Deep-Learning/tree/main/Assign4">
+          <span class="project-symbol project-symbol-rag" aria-hidden="true"><svg viewBox="0 0 32 32" fill="none"><path d="M6 7h8v18H6zM18 7h8v18h-8zM14 25l2 2 2-2" stroke="currentColor" stroke-width="1.7" /><path d="M9 12h2m10 0h2M9 16h2m10 0h2" stroke="currentColor" stroke-width="1.7" /></svg></span>
+          <div class="project-description"><p class="eyebrow">Retrieval / Literature</p><h3>Literary RAG Lab</h3><p>Ask questions across Dostoevsky and Nietzsche. Read answers alongside the passages that informed them.</p></div>
+          <span class="row-action">Explore project <span aria-hidden="true">&#8599;</span></span>
+        </a>
       </section>
 
-      <section id="about" class="panel snap-section section-block">
-        <div class="section-heading">
-          <p class="eyebrow">About</p>
-          <h2>A little more serious than a portfolio, less vague than a personal brand page.</h2>
+      <section id="about" class="about-section" aria-labelledby="about-title">
+        <div class="about-label">
+          <p class="eyebrow">02 / Behind the work</p>
+          <h2 id="about-title">Curious by nature.<br /><em>Hands-on by choice.</em></h2>
         </div>
-
-        <div class="about-grid">
-          <div class="about-copy">
-            <p>
-              I care about systems that can survive contact with real runtime
-              constraints: GPU limits, network boundaries, deployment friction,
-              audit trails, and the difference between a local demo and a
-              public-facing surface.
-            </p>
-            <p>
-              The through-line across this work is the same whether the project
-              starts as coursework or platform R&amp;D: build a narrow slice,
-              make it observable, deploy it honestly, and keep the interfaces
-              readable as the system grows.
-            </p>
-          </div>
-
-          <div class="about-panels">
-            <article class="mini-panel">
-              <span class="panel-kicker">How I build</span>
-              <h3>Proof over posture</h3>
-              <p>
-                I prefer bounded capability, clean interfaces, and deployable
-                truth over broad claims or hand-wavy platform language.
-              </p>
-            </article>
-
-            <article class="mini-panel">
-              <span class="panel-kicker">Current stack</span>
-              <h3>Owned infra first</h3>
-              <p>
-                Talos, Flux, Cloudflare, vLLM, LangGraph, Postgres, and
-                Qdrant are already in the loop. The landing page is static; the
-                applications are not.
-              </p>
-            </article>
-
-            <article class="mini-panel">
-              <span class="panel-kicker">Public identity</span>
-              <h3>Lintel outside, ASHTON inside</h3>
-              <p>
-                Lintel is the public-facing name. ASHTON is the internal
-                codename for the platform architecture that ties the longer-term
-                work together.
-              </p>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <section id="work" class="panel snap-section section-block">
-        <div class="section-heading">
-          <p class="eyebrow">Selected Work</p>
-          <h2>Live projects with real deployment shape behind them.</h2>
-        </div>
-
-        <div class="project-stack">
-          <article class="project-card">
-            <div class="project-meta">
-              <span class="project-status">Live now</span>
-              <span class="project-host">summarizer.lintellabs.net</span>
+        <div class="about-copy">
+          <p class="about-lead">I'm Izzet, the person behind Lintel Labs.</p>
+          <p>I work across machine learning, application development, and the infrastructure that brings them together. Lintel Labs is home to my independent projects, coursework, and ongoing experiments.</p>
+          <p>I like following an idea all the way through: understanding the problem, building the model, and making something someone else can actually use.</p>
+          <details class="platform-details" id="platform">
+            <summary><span><span class="detail-label">Ongoing work</span>ASHTON &amp; the infrastructure behind it</span><span class="disclosure-icon" aria-hidden="true"></span></summary>
+            <div class="details-content">
+              <p>ASHTON brings together services for occupancy, member experiences, and staff operations. It is an ongoing platform project, developed one capability at a time.</p>
+              <p>Prometheus is my self-hosted infrastructure: Talos, Kubernetes, GPU inference, and monitoring. It gives these experiments a place to run beyond my laptop.</p>
+              <a class="text-link" href="https://github.com/ixxet">Browse the repositories <span aria-hidden="true">&#8599;</span></a>
             </div>
-            <div class="project-body">
-              <h3>Summarizer</h3>
-              <p>
-                An extractive summarization project that combines TextRank and
-                MMR to reduce redundancy while keeping the important sentences in
-                view. The public app is narrow by design; the model and runtime
-                services remain private.
-              </p>
-              <ul class="project-points">
-                <li>TextRank + MMR summarization pipeline for news-style input.</li>
-                <li>Prometheus-monitored deployment rather than a classroom-only demo.</li>
-                <li>Public surface is intentionally thinner than the internal platform.</li>
-              </ul>
-              <div class="project-links">
-                <a href="https://summarizer.lintellabs.net">Open app</a>
-                <a href="https://github.com/ixxet/User-Adaptive-Summarization_COMP385-402_Group-4_Winter2026">Repository</a>
-              </div>
-            </div>
-          </article>
-
-          <article class="project-card">
-            <div class="project-meta">
-              <span class="project-status">Live now</span>
-              <span class="project-host">rag.lintellabs.net</span>
-            </div>
-            <div class="project-body">
-              <h3>Literary RAG Lab</h3>
-              <p>
-                A retrieval-augmented generation system over Dostoevsky and
-                Nietzsche that uses FAISS retrieval, Sentence-Transformers
-                embeddings, and a private vLLM backend. The point is not just
-                retrieval quality, but a public grading surface that actually works.
-              </p>
-              <ul class="project-points">
-                <li>Corpus fetch, cleanup, chunking, embedding, and exact-vector retrieval.</li>
-                <li>Grounded answers with citations and visible retrieved passages.</li>
-                <li>Hosted so the app can reach vLLM even when the reviewer cannot.</li>
-              </ul>
-              <div class="project-links">
-                <a href="https://rag.lintellabs.net">Open app</a>
-              </div>
-            </div>
-          </article>
-
-          <article class="project-card">
-            <div class="project-meta">
-              <span class="project-status">Live now</span>
-              <span class="project-host">fraud.lintellabs.net</span>
-            </div>
-            <div class="project-body">
-              <h3>Fraud Sentinel</h3>
-              <p>
-                A fraud-detection system with a PyTorch model, FastAPI
-                inference layer, SvelteKit dashboard, LangGraph review flow, and
-                RAG-grounded analyst brief. The LLM explains; it does not make
-                the fraud decision.
-              </p>
-              <ul class="project-points">
-                <li>Classifier plus anomaly signal for transaction scoring.</li>
-                <li>Analyst queue, case workflow, and grounded review context.</li>
-                <li>Deployed as a proper app slice rather than a one-off UI mock.</li>
-              </ul>
-              <div class="project-links">
-                <a href="https://fraud.lintellabs.net">Open app</a>
-              </div>
-            </div>
-          </article>
-        </div>
-      </section>
-
-      <section id="platform" class="panel snap-section section-block">
-        <div class="section-heading">
-          <p class="eyebrow">Platform Direction</p>
-          <h2>ASHTON is the longer arc: modular services, narrow reads, honest boundaries.</h2>
-        </div>
-
-        <div class="platform-layout">
-          <div class="platform-copy">
-            <p>
-              The live course projects sit on top of a larger systems direction.
-              Under the ASHTON codename, the work is split into bounded services
-              instead of one shapeless app: physical truth, member truth,
-              operator reads, shared contracts, and a GitOps deployment
-              substrate.
-            </p>
-            <p>
-              I am not trying to fake a finished platform. The goal is to prove
-              one real capability at a time and keep the system understandable
-              as it expands.
-            </p>
-          </div>
-
-          <div class="platform-grid">
-            <article class="mini-panel">
-              <span class="panel-kicker">Physical truth</span>
-              <h3>ATHENA</h3>
-              <p>Presence, occupancy, edge ingress, and bounded live deployment proof.</p>
-            </article>
-
-            <article class="mini-panel">
-              <span class="panel-kicker">Member truth</span>
-              <h3>APOLLO</h3>
-              <p>Auth, profile state, explicit lobby membership, workouts, and deterministic previews.</p>
-            </article>
-
-            <article class="mini-panel">
-              <span class="panel-kicker">Staff reads</span>
-              <h3>HERMES</h3>
-              <p>Read-only operational surfaces over stable upstream truth.</p>
-            </article>
-
-            <article class="mini-panel">
-              <span class="panel-kicker">Deployment substrate</span>
-              <h3>Prometheus</h3>
-              <p>Talos, Flux, observability, private model services, and the runtime behind these demos.</p>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <section class="panel snap-section section-block section-principles">
-        <div class="section-heading">
-          <p class="eyebrow">Working Style</p>
-          <h2>The bar is simple: working code, clean boundaries, credible deployment.</h2>
-        </div>
-
-        <div class="principles-grid">
-          <article class="principle-card">
-            <h3>Narrow slices</h3>
-            <p>One deployed capability is more valuable than a wide roadmap with no proof behind it.</p>
-          </article>
-          <article class="principle-card">
-            <h3>Observable first</h3>
-            <p>Metrics, traces, and explicit health surfaces matter before the system is considered real.</p>
-          </article>
-          <article class="principle-card">
-            <h3>Infrastructure honesty</h3>
-            <p>Public URLs are allowed to be simple. The runtime behind them should still be disciplined.</p>
-          </article>
-          <article class="principle-card">
-            <h3>Readable growth</h3>
-            <p>Projects should become more coherent as they expand, not more mysterious.</p>
-          </article>
+          </details>
         </div>
       </section>
     </main>
 
-    <footer id="contact" class="site-footer">
-      <div>
-        <p class="footer-title">Lintel Labs</p>
-        <p class="footer-copy">
-          Public entry point for live apps, course deployments, and the longer
-          platform work under ASHTON.
-        </p>
-      </div>
-
-      <div class="footer-links">
-        <a href="https://lintellabs.net">Home</a>
-        <a href="https://github.com/ixxet">GitHub</a>
-        <a href="https://fraud.lintellabs.net">Fraud Sentinel</a>
-        <a href="https://rag.lintellabs.net">Literary RAG</a>
-      </div>
+    <footer id="contact" class="site-footer shell">
+      <div class="footer-main"><div><p class="eyebrow">Keep in touch</p><h2>Good things start<br />with <em>a conversation.</em></h2></div><a class="button button-light" href="https://github.com/ixxet">Find me on GitHub <span aria-hidden="true">&#8599;</span></a></div>
+      <div class="footer-bottom"><span>Lintel Labs <span aria-hidden="true">/</span> Izzet Abidi</span><a href="#top">Back to top <span aria-hidden="true">&#8593;</span></a></div>
     </footer>
   </body>
 </html>
